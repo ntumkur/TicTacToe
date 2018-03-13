@@ -1,0 +1,54 @@
+<html>
+<head>
+
+    <title>Index</title>
+      <script src="tictactoe.js"></script>
+      <link rel="stylesheet" type="text/css" href="webstyle.css">
+</head>
+<body>
+
+    <h1><center><u>TIC TAC TOE</center></u></h1>
+    <br />
+    <h3 id="result"></h3>
+    <div>
+        <button id="startgame" style="display:none" onclick="startgame()">Start Game</button>
+        <div id="playerinformation">
+
+            <h3>Player Infromation</h3>
+            <br />
+            <button id="Player" onclick="toggledisplay()">Player 1</button>
+            <div id="toggle" style="display:none">
+
+                <label for="name">Name</label>
+                <input id="name" />
+                <label for="mark">Mark</label>
+                <input id="mark" />
+                <br />
+                <button id="buttonsave" onclick="getdata()">Submit</button>
+            </div>
+        </div>
+
+        <div id="table" style="display:none">
+            <table id="example">
+                <tbody>
+                    <tr>
+                        <td id="1" onclick="getrow(this)"></td>
+                        <td id="2" onclick="getrow(this)"></td>
+                        <td id="3" onclick="getrow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td id="4" onclick="getrow(this)"></td>
+                        <td id="5" onclick="getrow(this)"></td>
+                        <td id="6" onclick="getrow(this)"></td>
+                    </tr>
+                    <tr>
+                        <td id="7" onclick="getrow(this)"></td>
+                        <td id="8" onclick="getrow(this)"></td>
+                        <td id="9" onclick="getrow(this)"></td>
+                    </tr>
+                </tbody>
+            </table>          
+        </div>       
+    </div>
+</body>
+</html>

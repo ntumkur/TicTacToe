@@ -1,0 +1,34 @@
+<html>
+   <head>
+		<title>Vehicle Trader App</title>
+		<script src="view/autotrader.js"></script>
+		<link rel="stylesheet" type="text/css" href="view/style.css">
+   </head>
+   <body onload=getInitData()>
+		<h1>Auto Trader App</h1>
+		<button type="button" class="navButton center" onclick="toggleDisplay('browseDiv')">Browse Vehicles</button>		
+		<div class="center hide" id="browseDiv">
+			<p><h2>Dealership: </h2><h3 id="dealer"></h3></p>
+			<p>Example vehicles: </p>
+			<ul id="vehicleList">
+			</ul>
+		</div>
+		
+		<button type="button" class="navButton center" onclick="toggleDisplay('addAutoDiv')">Sell Vehicle</button>
+		<div class="center hide" id="addAutoDiv">
+			<div class="center">
+				<label for="make">Make: </label> 
+				<input id="make"></input> <br>
+			</div>
+			<div class="center">
+				<label for="year">Year: </label> 
+				<input id="year"></input> <br>
+			</div>
+			<div class="center">
+				<label for="color">Color: </label> 
+				<input id="color"></input> <br>
+			</div>
+			<button class="center" type="button" onclick="addVehicle()">Add Vehicle</button>
+		</div>
+   </body>
+</html>
